@@ -1,0 +1,22 @@
+{% extends 'theme.html' %}                                                                   
+
+{% block content %}            
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <img src="{{detial.image}}" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{detial.name}}</h5>
+          <p class="card-text">{{detial.price}}</p>
+          <a href="#" class="btn btn-primary">add to   cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %} 

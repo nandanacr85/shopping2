@@ -1,0 +1,19 @@
+{% extends 'theme.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+    {% for n in item %}
+    <div class="col-md-3">
+      <div class="card" style="width: 18rem;">
+        <a href="{% url 'detial' n.id %}"><img src="{{n.image}}" class="card-img-top" alt="..." height="300px"></a>
+        <div class="card-body">
+          <h5 class="card-title">{{n.name}}</h5>
+          <p class="card-text">{{n.price}}</p>
+          <a href="#" class="btn btn-primary">Addtocart</a> 
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+
+{% endblock %}
